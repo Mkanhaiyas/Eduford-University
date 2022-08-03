@@ -1,0 +1,408 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+.header
+{
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(H:/KANHAIYA/html/newWeb/banner.png);
+	min-height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav
+{
+	flex: 1;
+	text-align: right;
+}
+
+ul li
+{
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    padding: 8px 12px;
+    position: relative;
+}
+
+ul li::after
+{
+	content: "";
+	background-color: red;
+	display: block;
+	width: 0%;
+	height: 2px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after
+{
+	width: 100%;
+}
+
+ul li a
+{
+   text-decoration: none;
+   color: rgba(255,255,255, 1.0);
+ }
+
+#logo
+{
+    width: 150px;
+    margin: 2px 20px;
+}
+
+.text-box
+{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	t1ext-align: centre;
+}
+
+.text-box h1
+{
+	font-size: 62px;
+}
+
+.text-box p
+{
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.hero
+{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.hero:hover
+{
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+
+nav .fa
+{
+    display:none ;
+}
+
+@media (max-width: 720px)
+{
+	.text-box h1
+	{
+		font-size: 30px;
+	}
+
+	ul li
+	{
+		display: block;
+		font-size: 12px;
+	}
+
+	ul li:hover::after
+	{
+		background-color: #fff;
+	}
+
+    .nav
+    {
+    	position: fixed;
+    	background: #f44336;
+    	height: 100vh;
+    	width: 200px;
+    	top: 0;
+    	right: -200px;
+    	text-align: left;
+    	z-index: 2;
+    	transition: 1s;
+    }
+
+    #logo
+    {
+    	width: 130px;
+    }
+
+    nav .fa
+    {
+    	display: block;
+    	color: #fff;
+    	margin: 5px 15px;
+    	font-size: 18px;
+    	cursor: pointer;
+    }
+
+    .nav ul
+    {
+    	padding: 30px;
+    }
+
+    .column
+    {
+    	flex-direction: column;
+    }
+
+    .img
+    {
+    	flex-direction: column;
+    }
+
+    .faci
+    {
+    	flex-direction: column;
+      flex-basis: 30%;
+    }
+
+    .com1
+    {
+      flex-direction: column;
+    }
+
+    .cform h1
+    {
+    	font-size: 28px;
+    }
+
+}
+
+
+
+.second
+{
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+h1
+{
+   font-size: 36px;
+   font-weight: 600;
+}
+p{
+   color: #777;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 22px;
+   padding: 10px;
+}
+
+.column
+{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+
+.column1
+{
+	background: #fff3f3;
+	box-sizing: border-box;
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	transition: 0.5s;
+}
+
+.column1:hover
+{
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.campus
+{
+	text-align: center;
+	padding: 40px 60px;
+}
+
+.campus h2
+{
+	font-size: 36px;
+}
+
+.img
+{
+	display: flex;
+	justify-content: center;
+}
+
+.img img {
+	width: 95%;
+   height: 60vh;
+   border-radius: 10px;
+   box-sizing: border-box;
+   flex-basis: 50%;
+   position: relative;
+   right: 5px;
+}
+
+.img1
+{
+	position: relative;
+	margin-top: 40px;
+}
+
+.img2
+{  
+	width: 95%;
+	height: 60vh;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	opacity: 0;
+	transition: 0.5s ease;
+}
+
+.img2:hover
+{
+	background: rgba(277, 0, 0, 0.2);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5) ;
+	padding-top: 170px;  
+	height: 31.5vh; 
+	opacity: 1;
+}
+
+.facilities
+{
+	text-align: center;
+	padding-top: 20px 10px;
+}
+
+.faci1 p, .faci1 h3
+{
+	text-align: left;
+	padding-left: 20px;
+}
+
+.faci
+{
+	display: flex;
+	justify-content: center;
+	padding: 40px 40px;
+}
+
+.faci1 img
+{
+	width: 90%;
+	height: 55vh;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+#comment
+{
+	text-align: center;
+	margin: 30px 30px;
+}
+
+.com1
+{
+	display: flex;
+}
+
+.com2
+{  	
+	margin: auto;
+	display: flex;
+   margin-right: 10px;
+   margin-bottom: 10px;
+	text-align: left;
+	background-color: #fff3f3;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.com2 img
+{
+	height: 40px;
+	border-radius: 50%;
+	margin: 10px 20px;
+
+}
+
+.com2 .fa
+{
+	font-size: 60%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #f44336;
+}
+
+.cform
+{
+	text-align: center;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(H:/KANHAIYA/html/newWeb/banner2.jpg); 
+	background-position: center;
+	background-size: cover;
+	width: 80%;
+	padding: 100px 0;
+	margin : 100px auto;
+	border-radius: 10px;
+}
+
+.cform h1
+{
+	color: rgba(255,255,255, 1.0);
+	margin-bottom: 40px;
+	padding: 0 20px;
+}
+
+.footer
+{
+	text-align: center;
+	padding: 20px 0 1px 0;
+	width: 100%;
+}
+
+.footer h3
+{
+	margin-bottom: 25px;
+	font-weight: 600;
+}
+
+.footer p, .icon
+{
+	margin-bottom: 20px;
+}
+
+.fab
+{
+	margin-right: 7px ;
+	color: #f44336;
+	cursor: pointer;
+}
+
+.far
+{
+	color: #f44336;
+	cursor: pointer;
+}

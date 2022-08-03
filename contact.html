@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="H:/KANHAIYA/html/css/contact.css">
+	<link rel="stylesheet" type="text/css" href="H:/KANHAIYA/html/css/cssfont/all.css">
+	<title>Eduford</title>
+</head>
+<body>
+	<section class="header">
+	<nav>
+	<img src="H:/KANHAIYA/html/newWeb/logo.png" id="logo">
+	<div class="nav" id="nav">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+	<ul>
+		<li><a href="H:/KANHAIYA/html/comWeb.html">HOME</a></li>
+		<li><a href="H:/KANHAIYA/html/about.html">ABOUT</a></li>
+        <li><a href="H:/KANHAIYA/html/course.html">COURSE</a></li>
+        <li><a href="H:/KANHAIYA/html/blog.html">BLOG</a></li>
+        <li><a href="H:/KANHAIYA/html/contact.html">CONTACT</a></li>
+	</ul>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+    	<h1>Contact Us</h1>
+    </div>
+    </section>
+
+    <section>
+        <div class="contA">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15047.713256568513!2d72.81609734999999!3d19.4586573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9844efb9ba9%3A0x23c0bfbf325618cf!2sVirar!5e0!3m2!1sen!2sin!4v1657645123638!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contB">
+            <div class="contB_1">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Virar, Maharashtra, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 8421291803</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>mkanhaiyas149@gmail.com</h5>
+                        <p>Email us for query</p>
+                    </span>
+                </div>
+            </div>
+            <form class="contB_2" action="https://formsubmit.co/mkanhaiyas149@gmail.com" method="POST">
+                <input type="text" placeholder="Enter Name" id="name">
+                <input type="email" placeholder="Enter Email" id="email">
+                <input type="text" placeholder="Enter Subject" id="subject">
+                <textarea placeholder="Message" rows="5" id="message"></textarea>
+                <button class="design2" type="submit" id="design2">Send Message</button>
+            </form>
+        </div>
+        
+
+    </section>
+
+
+
+        <footer class="footer">
+    	<h3>About Us</h3>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque aliquet turpis nulla, eleifend faucibus est<br> sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus Donec sit.
+        </p>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by MK Tutorials</p>
+        </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>    
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <script>
+        var nav = document.getElementById("nav");
+        function showMenu()
+        {
+            nav.style.right = "0";
+        }
+
+        function hideMenu()
+        {
+            nav.style.right = "-200px";
+        }
+     </script>   
+        /*
+        var btn=document.getElementById('design2');
+        btn.addEventListener('submit',function (e){
+            e.preventDefault();
+            const name=document.getElementById('name').value,
+                  email=document.getElementById('email').value,
+                  subject=document.getElementById('subject').value,
+                  message=document.getElementById('message').value,
+                  body='name: '+name + 'email: ' + email + 'subject: ' + subject + 'message: '+ message;
+
+
+              Email.send({
+    SecureToken : "4706af1c-d1f7-4b99-8f17-7836cee806a7",
+    To : 'kanhaiya.a.mishra@slrtce.in',
+    From : email,
+    Subject : subject,
+    Body : body
+}).then(
+  message => alert(message)
+);
+}*/
+
+
+</body>
+</html>
